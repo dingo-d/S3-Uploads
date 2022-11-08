@@ -2,7 +2,7 @@
 
 namespace S3_Uploads;
 
-use Aws;
+use S3UploadsVendor\S3_Uploads\Aws;
 use Exception;
 use WP_Error;
 

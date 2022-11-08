@@ -2,17 +2,17 @@
 
 namespace S3_Uploads;
 
-use Aws\CacheInterface;
-use Aws\LruArrayCache;
-use Aws\Result;
-use Aws\S3\Exception\S3Exception;
-use Aws\S3\S3ClientInterface;
 use Exception;
-use GuzzleHttp\Psr7; //phpcs:ignore -- Used in Psalm types
-use GuzzleHttp\Psr7\CachingStream;
-use GuzzleHttp\Psr7\MimeType;
-use GuzzleHttp\Psr7\Stream;
-use Psr\Http\Message\StreamInterface; //phpcs:ignore -- Used in Psalm types
+use S3UploadsVendor\S3_Uploads\Aws\CacheInterface;
+use S3UploadsVendor\S3_Uploads\Aws\LruArrayCache;
+use S3UploadsVendor\S3_Uploads\Aws\Result;
+use S3UploadsVendor\S3_Uploads\Aws\S3\Exception\S3Exception;
+use S3UploadsVendor\S3_Uploads\Aws\S3\S3ClientInterface;
+use S3UploadsVendor\S3_Uploads\GuzzleHttp\Psr7; //phpcs:ignore -- Used in Psalm types
+use S3UploadsVendor\S3_Uploads\GuzzleHttp\Psr7\CachingStream;
+use S3UploadsVendor\S3_Uploads\GuzzleHttp\Psr7\MimeType;
+use S3UploadsVendor\S3_Uploads\GuzzleHttp\Psr7\Stream;
+use S3UploadsVendor\S3_Uploads\Psr\Http\Message\StreamInterface; //phpcs:ignore -- Used in Psalm types
 
 // phpcs:disable WordPress.NamingConventions.ValidVariableName.MemberNotSnakeCase
 // phpcs:disable WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid

@@ -4,11 +4,11 @@
 Plugin Name: S3 Uploads
 Description: Store uploads in S3
 Author: Human Made Limited, forked by Denis Zoljom
-Version: 3.0.3
+Version: 3.0.4
 Author URI: https://hmn.md
 */
 
-if ( ! class_exists( '\\Aws\\S3\\S3Client' ) ) {
+if ( ! class_exists( '\\Aws\\S3\\S3Client' ) || ! class_exists( '\\S3UploadsVendor\\S3_Uploads\\Aws\\S3\\S3Client' ) ) {
         // Require AWS Autoloader file.
        require_once dirname( __FILE__ ) . '/vendor/autoload.php';
 }
