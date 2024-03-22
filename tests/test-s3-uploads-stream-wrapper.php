@@ -1,11 +1,13 @@
 <?php
 
-class Test_S3_Uploads_Stream_Wrapper extends WP_UnitTestCase {
+use Yoast\WPTestUtils\WPIntegration\TestCase;
+
+class Test_S3_Uploads_Stream_Wrapper extends TestCase {
 
 	protected $s3 = null;
 
-	public function setUp() {
-
+	public function set_up() {
+        parent::set_up();
 	}
 
 	public function tearDown() {

@@ -1,8 +1,11 @@
 <?php
 
-class Test_S3_Uploads_Image_Editor_Imagick extends WP_UnitTestCase {
+use Yoast\WPTestUtils\WPIntegration\TestCase;
 
-	public function setUp() {
+class Test_S3_Uploads_Image_Editor_Imagick extends TestCase {
+
+	public function set_up() {
+        parent::set_up();
 		$this->image_path = dirname( __FILE__ ) . '/data/sunflower.jpg';
 
 		require_once ABSPATH . WPINC . '/class-wp-image-editor.php';

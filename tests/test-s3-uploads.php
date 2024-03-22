@@ -1,18 +1,22 @@
 <?php
 
-class Test_S3_Uploads extends WP_UnitTestCase {
+use Yoast\WPTestUtils\WPIntegration\TestCase;
+
+class Test_S3_Uploads extends TestCase {
 
 	protected $s3 = null;
 
-	public function setUp() {
+	public function set_up() {
+        parent::set_up();
 
 		// start the tests with nothing added
 		S3_Uploads\Plugin::get_instance()->tear_down();
 	}
 
-	public function tearDown() {
+	public function tear_down() {
 		// reenable for other tests
 		S3_Uploads\Plugin::get_instance()->setup();
+        parent::tear_down();
 	}
 
 	/**
